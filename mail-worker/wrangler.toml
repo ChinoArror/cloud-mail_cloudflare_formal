@@ -1,4 +1,4 @@
-name = "cloud-mail"
+name = "cloudflare-mail-formal"
 main = "src/index.js"
 compatibility_date = "2025-04-09"
 keep_vars = true
@@ -6,18 +6,18 @@ keep_vars = true
 [observability]
 enabled = true
 
-#[[d1_databases]]
-#binding = "db"			#d1数据库绑定名默认不可修改
-#database_name = ""		#d1数据库名字
-#database_id = ""		#d1数据库id
+[[d1_databases]]
+binding = "db"			#d1数据库绑定名默认不可修改
+database_name = "cloud_mail_formal"		#d1数据库名字
+database_id = "e9f67380-1cbf-4032-9e6c-121e1b7e971a"		#d1数据库id
 
-#[[kv_namespaces]]
-#binding = "kv"			#kv绑定名默认不可修改
-#id = ""					#kv数据库id
+[[kv_namespaces]]
+binding = "kv"			#kv绑定名默认不可修改
+id = "f68532251f1f4bd28d29374e4f14b5e3"					#kv数据库id
 
-#[[r2_buckets]]
-#binding = "r2"			#r2对象存储绑定名默认不可修改
-#bucket_name = ""		#r2对象存储桶的名字
+[[r2_buckets]]
+binding = "r2"			#r2对象存储绑定名默认不可修改
+bucket_name = "cloud-mail-formal"		#r2对象存储桶的名字
 
 [assets]
 binding = "assets"		#静态资源绑定名默认不可修改
